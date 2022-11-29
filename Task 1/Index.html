@@ -17,12 +17,16 @@
       <div class="wrapper">
         <h1 class="headline">Weight Converter</h1>
         <!-- Users input -->
-        <form>
+        <form onsubmit="return false">
           <input type="text" id="search" placeholder="Enter kilograms..." />
-          <input type="submit" id="submit-btn" value="Calculate" />
+          <input type="submit" id="submit-btn" value="Calculate" onclick="convertKilograms()"/>
         </form>
         <!-- Place for output after form submission -->
-        <div id="output"></div>
+        <div id="output">
+          <p class="weight-amount">Pounds: <span id="pound-amount" class="weight-amount">0</span> lb</p>
+          <p class="weight-amount">Grams: <span id="gram-amount" class="weight-amount">0</span> g</p>
+          <p class="weight-amount">Ounces: <span id="oz-amount" class="weight-amount">0</span>  oz</p>
+        </div>
       </div>
     </main>
 
